@@ -1,0 +1,44 @@
+<div class="container__card__main">
+  <div class="card">
+    <!-- Left -->
+    <div class="card__left__container">
+      <div class="card__left">
+        <div class="image__left">
+          <img style="border: 4px solid white; border-radius: 50%; cursor: pointer;width: 100px; height: 100px;" src="./../../assets/images/image-jeremy.png">
+        </div>
+        <span>Report For</span>
+      </div>
+    </div>
+    <!-- Right -->
+    <div class="card__right__container">
+      <div class="card__right">
+        <div class="right" *ngFor="let dat of dati">
+          <div class="header__container__right" [ngStyle]="{'background-color': dat.color}">
+            <img src="{{dat.image}}" style="margin-right: 15px;">
+          </div>
+          <div class="container__bottom__card__right">
+            <div class="container__master__right">
+              <div class="bottom__card__right">
+                <div
+                  style="display: flex; justify-content: space-between; width: 100%; align-items: center; height: 20px;">
+                  <div class="row__card__right">
+                    <span style="color: white; font-size: 16px;">{{dat.name}}</span>
+                  </div>
+                  <div>
+                    <img class="image__ellipsis" src="./../../assets/images/icon-ellipsis.svg">
+                  </div>
+                </div>
+                <div class="hours__card__right">
+                  <span style="font-size: 52px; color: white;">{{dat.hour}}hrs</span>
+                </div>
+                <div class="last__week">
+                  <span>Last Week - {{dat.week}}hrs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
