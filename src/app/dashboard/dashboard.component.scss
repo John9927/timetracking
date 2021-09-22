@@ -81,11 +81,11 @@ li {
 // RIGHT
 .card__right__container {
   display: flex;
-  width: calc(98% - 300px);
+  width: calc(98% - 260px);
 }
 
 .card__right {
-  width: calc(98% - 300px);
+  width: calc(98% - 260px);
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 25px;
@@ -197,7 +197,7 @@ li {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .card {
     flex-direction: column;
     justify-content: space-between;
