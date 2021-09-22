@@ -1,17 +1,18 @@
 <div class="container__card__main">
   <div class="card">
     <!-- Left -->
-    <div style="display: flex; flex-direction: column;">
+    <div class="container">
       <div class="card__left__container">
         <div class="card__left">
           <div class="image__left">
-            <img style="border: 4px solid white; border-radius: 50%; cursor: pointer;width: 100px; height: 100px;"
-              src="./../../assets/images/image-jeremy.png">
+            <img class="img" src="./../../assets/images/image-jeremy.png">
           </div>
-          <span style="margin: 60px 0 10px 0; color: #bdc1ff;">Report For</span>
-          <span style="font-size: 45px; color: white;">
-            Jeremy Robson
-          </span>
+          <div class="title__and__description">
+            <span class="report">Report For</span>
+            <span class="title">
+              Jeremy Robson
+            </span>
+          </div>
         </div>
       </div>
       <div class="border__left__container">
@@ -41,11 +42,13 @@
                     <img class="image__ellipsis" src="./../../assets/images/icon-ellipsis.svg">
                   </div>
                 </div>
-                <div class="hours__card__right">
-                  <span style="font-size: 52px; color: white;">{{dat.hour}}hrs</span>
-                </div>
-                <div class="last__week">
-                  <span>Last Week - {{dat.week}}hrs</span>
+                <div class="container__items">
+                  <div class="hours__card__right">
+                    <span style="font-size: 52px; color: white;">{{dat.hour}}hrs</span>
+                  </div>
+                  <div class="last__week">
+                    <span>Last Week - {{dat.week}}hrs</span>
+                  </div>
                 </div>
               </div>
             </div>
