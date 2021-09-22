@@ -7,10 +7,9 @@
 
 .card {
   display: flex;
-  // width: 1200px;
   margin: 0 auto;
   height: 480px;
-  justify-content: space-evenly;
+  justify-content: space-between
 }
 
 .container {
@@ -200,7 +199,6 @@ li {
 @media screen and (max-width: 800px) {
   .card {
     flex-direction: column;
-    justify-content: space-between;
     width: 95%;
   }
   .container__card__main {
